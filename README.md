@@ -6,8 +6,11 @@ Given a "4160x3120.nv21" yuv image,
 2. the 4 tasks will be
    suppose the yuv image left and top as (0,0),and right and bottom as（4160，3120）
    task 1, set the left and top corner area as black,from pixle(0，0）to (1440,1080)//图像左上角置黑 
+   
    task 2, set a black rect on the center with the rect size 1280x960               //图像中心画黑框，大小1280x960
+   
    task 3, flip the right and bottom, the rectangle region is 1440x1080             //图像右下角1440x1080水平镜像 
+   
    task 4, rotate 180°for the left and bottom area, the region is 1440x1080        //图像左下角旋转180°
 3. save the final result to a new yuv image of 4160x3120_new.nv21
 
